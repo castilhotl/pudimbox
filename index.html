@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pudim Box | Pudins, bolos e brownies em São Paulo</title>
+<meta name="description" content="Pudim lisinho, sem furinho e afogado em caramelo. Pudins individuais, inteiros na forma de alumínio, brownies e bolos no pote. Peça pelo site ou WhatsApp.">
+<meta name="theme-color" content="#052742">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Pudim Box">
+<meta property="og:title" content="Pudim Box | Pudins, bolos e brownies em São Paulo">
+<meta property="og:description" content="Treme. Brilha. Escorre. Pudins, brownies e bolos no pote em São Paulo.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="preload" as="image" href="assets/hero-calda.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&amp;family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#052742}a:hover{color:#C9701F}
+@keyframes kenburns{0%{transform:scale(1.04) translate(0,0)}100%{transform:scale(1.16) translate(-1.5%,1%)}}
+@keyframes rise{from{transform:translateY(40px);opacity:0}to{transform:translateY(0);opacity:1}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes dripLoop{0%,100%{transform:scaleY(.6)}50%{transform:scaleY(1.12)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+@keyframes progress{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes lift{0%{transform:scale(1.04) translateY(1.5%)}100%{transform:scale(1.1) translateY(-2%)}}
+@keyframes pulse{0%,100%{transform:scale(1);box-shadow:0 12px 30px -8px rgba(5,39,66,.6),0 0 0 0 rgba(37,211,102,.5)}50%{transform:scale(1.06);box-shadow:0 12px 30px -8px rgba(5,39,66,.6),0 0 0 14px rgba(37,211,102,0)}}
+@keyframes whisk{0%,100%{transform:rotate(-14deg)}50%{transform:rotate(14deg)}}
+.pb-p{transform-box:fill-box}
+.pb-zoom{overflow:hidden}
+.pb-zoom img{transition:transform .9s cubic-bezier(.2,.8,.2,1)}
+.pb-zoom:hover img{transform:scale(1.09)}
+.pb-btn{transition:transform .2s cubic-bezier(.2,.9,.3,1.4)}
+.pb-btn:hover{transform:scale(1.06) rotate(-1deg)}
+.pb-still *{animation:none !important}
+@media (prefers-reduced-motion: reduce){.pb-root *{animation:none !important;transition:none !important}}
+</style>
+<style>
+.pb-flv-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:36px;opacity:0;transform:scale(1);transition:opacity .9s ease,transform 4s ease}
+.pb-flv-img.is-on{opacity:1;transform:scale(1.06)}
+.pb-progress{height:100%;background:#FFFFFF;transform-origin:left;animation:progress 3.6s linear infinite}
+.pb-progress.is-stopped{animation:none;width:100%}
+.pb-flv-btn{display:flex;justify-content:space-between;align-items:center;width:100%;min-height:54px;padding:8px 4px;background:transparent;border:0;border-bottom:1.5px solid #D5DEE6;cursor:pointer;text-align:left;font-size:28px;letter-spacing:-0.01em;color:#052742;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:700;transition:color .3s,padding .3s}
+.pb-flv-btn:hover{color:#C9701F}
+.pb-flv-btn.is-on{color:#C9701F;font-family:'Kaushan Script',cursive;font-weight:400;padding-left:14px}
+.pb-arrow{font-family:system-ui,sans-serif;font-size:22px;opacity:0;transform:translateX(-10px);transition:opacity .3s,transform .3s}
+.pb-flv-btn.is-on .pb-arrow{opacity:1;transform:none}
+a:focus-visible,button:focus-visible{outline:3px solid #F2B25C;outline-offset:3px}
+html{scroll-behavior:smooth}
+</style>
+</head>
+<body>
+<div class="pb-root" style="font-family: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif; color: #052742; background: #FFFFFF; overflow: hidden">
+
+  <!-- HERO -->
+  <section id="topo" style="position: relative; min-height: 100vh; display: flex; flex-direction: column; overflow: hidden; background: #052742">
+    <img src="assets/hero-calda.jpg" alt="Calda de caramelo sendo despejada em fio sobre um pudim em prato escuro" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; animation: kenburns 18s ease-in-out infinite alternate">
+    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5,39,66,0.6) 0%, rgba(5,39,66,0) 24%, rgba(5,39,66,0) 48%, rgba(5,39,66,0.88) 100%)"></div>
+
+    <header style="position: relative; width: 100%; max-width: 1320px; margin: 0 auto; box-sizing: border-box; padding: 20px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+      <a href="#topo" aria-label="Pudim Box" style="display: flex; align-items: center; gap: 12px; text-decoration: none">
+        <img src="assets/logo-icon.png" alt="" style="width: 52px; height: 52px; box-shadow: 0 0 0 2px #FFFFFF; border-radius: 50%">
+        <img src="assets/logo-word-white.png" alt="Pudim Box" style="height: 40px; width: auto">
+      </a>
+      <nav style="display: flex; flex-wrap: wrap; align-items: center; gap: 26px; font-size: 16px; font-weight: 700">
+        <a href="#pudins" style="text-decoration: none; color: #FFFFFF">Pudins</a>
+        <a href="#forma" style="text-decoration: none; color: #FFFFFF">Na forma</a>
+        <a href="#bolos" style="text-decoration: none; color: #FFFFFF">Brownies</a>
+        <a href="#lojas" style="text-decoration: none; color: #FFFFFF">Lojas</a>
+        <a href="https://www.instagram.com/pudimbox/" aria-label="Instagram da Pudim Box" style="color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"></circle></svg></a>
+        <a class="pb-btn" href="https://pudim-box-storefront.vercel.app/" style="text-decoration: none; background: #FFFFFF; color: #052742; padding: 12px 22px; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Peça agora</a>
+      </nav>
+    </header>
+
+    <div style="position: relative; flex: 1; width: 100%; max-width: 1320px; margin: 0 auto; box-sizing: border-box; padding: 0 32px 64px; display: flex; flex-direction: column; justify-content: flex-end; gap: 24px">
+      <h1 style="margin: 0; font-weight: 800; font-size: clamp(56px, 8.6vw, 140px); line-height: 0.9; letter-spacing: -0.045em; color: #FFFFFF; animation: rise 1s ease-out both">Treme. Brilha.<br><span style="font-family: 'Kaushan Script', cursive; font-weight: 400; letter-spacing: 0; color: #F2B25C">Escorre.</span></h1>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; animation: rise 1s .2s ease-out both">
+        <p style="margin: 0; max-width: 460px; font-size: 20px; line-height: 1.5; color: #E6EDF3">A calda cai em fio, o pudim brilha. Lisinho, sem furinho e afogado em caramelo.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a class="pb-btn" href="https://pudim-box-storefront.vercel.app/" style="text-decoration: none; background: #FFFFFF; color: #052742; padding: 18px 32px; border-radius: 999px; font-weight: 800; font-size: 18px">Quero meu pudim</a>
+          <a class="pb-btn" href="#pudins" style="text-decoration: none; border: 2px solid #FFFFFF; color: #FFFFFF; padding: 16px 28px; border-radius: 999px; font-weight: 700; font-size: 18px">Ver sabores</a>
+        </div>
+      </div>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="align-self: center; animation: bob 1.8s ease-in-out infinite"><path d="M6 9l6 6 6-6"></path></svg>
+    </div>
+  </section>
+
+  <!-- faixa -->
+  <div style="background: #052742; color: #FFFFFF; padding: 18px 0; white-space: nowrap; overflow: hidden; border-top: 1px solid rgba(255,255,255,0.15)">
+    <div style="display: inline-flex; align-items: center; gap: 40px; font-family: 'Kaushan Script', cursive; font-size: clamp(26px, 3vw, 42px); animation: marquee 30s linear infinite">
+      <span>Tradicional</span><span style="color: #F2B25C">●</span><span>Chocolate</span><span style="color: #F2B25C">●</span><span>Nutella</span><span style="color: #F2B25C">●</span><span>Paçoca</span><span style="color: #F2B25C">●</span><span>Doce de Leite</span><span style="color: #F2B25C">●</span><span>Pistache</span><span style="color: #F2B25C">●</span><span>Café</span><span style="color: #F2B25C">●</span><span>Três Leites</span><span style="color: #F2B25C">●</span><span>Cocada</span><span style="color: #F2B25C">●</span><span>Romeu e Julieta</span><span style="color: #F2B25C">●</span><span>Zero Lactose</span><span style="color: #F2B25C">●</span>
+      <span>Tradicional</span><span style="color: #F2B25C">●</span><span>Chocolate</span><span style="color: #F2B25C">●</span><span>Nutella</span><span style="color: #F2B25C">●</span><span>Paçoca</span><span style="color: #F2B25C">●</span><span>Doce de Leite</span><span style="color: #F2B25C">●</span><span>Pistache</span><span style="color: #F2B25C">●</span><span>Café</span><span style="color: #F2B25C">●</span><span>Três Leites</span><span style="color: #F2B25C">●</span><span>Cocada</span><span style="color: #F2B25C">●</span><span>Romeu e Julieta</span><span style="color: #F2B25C">●</span><span>Zero Lactose</span><span style="color: #F2B25C">●</span>
+    </div>
+  </div>
+
+  <!-- PUDINS -->
+  <section id="pudins" style="background: #FFFFFF; padding: 100px 24px">
+    <div style="max-width: 1320px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
+      <div style="flex: 3 1 560px; min-width: 0; position: relative">
+        <div class="pb-zoom" style="position: relative; aspect-ratio: 3 / 2; border-radius: 36px; background: #052742; box-shadow: 0 40px 80px -30px rgba(5,39,66,0.5)">
+                      <img class="pb-flv-img is-on" src="assets/baunilha.jpg" alt="Pudim de baunilha em prato azul com fava de baunilha">
+            <img class="pb-flv-img" src="assets/tradicional.jpg" alt="Pudim tradicional em prato de ardósia" loading="lazy">
+            <img class="pb-flv-img" src="assets/cocada.jpg" alt="Pudim de cocada com coco ralado e calda" loading="lazy">
+            <img class="pb-flv-img" src="assets/docedeleite.jpg" alt="Pudim de doce de leite com calda dourada" loading="lazy">
+            <img class="pb-flv-img" src="assets/pacoca.jpg" alt="Pudim de paçoca com paçoca esfarelada" loading="lazy">
+            <img class="pb-flv-img" src="assets/romeu.jpg" alt="Pudim romeu e julieta com calda de goiabada" loading="lazy">
+          <div style="position: absolute; left: 20px; bottom: 20px; background: #052742; color: #FFFFFF; padding: 8px 22px 12px; border-radius: 999px; font-family: 'Kaushan Script', cursive; font-size: 26px" id="pb-flv-name" aria-live="polite">Baunilha</div>
+          <div style="position: absolute; left: 0; right: 0; bottom: 0; height: 5px; background: rgba(255,255,255,0.3)">
+            <div class="pb-progress" id="pb-progress"></div>
+          </div>
+        </div>
+        <!-- selo do batedor -->
+        <div style="position: absolute; right: -24px; top: -36px; width: 150px; height: 150px">
+          <svg viewBox="0 0 200 200" style="position: absolute; inset: 0; width: 100%; height: 100%; animation: spin 18s linear infinite" aria-hidden="true">
+            <circle cx="100" cy="100" r="98" fill="#FFFFFF"></circle>
+            <path id="pbRing" d="M100 100 m-74 0 a74 74 0 1 1 148 0 a74 74 0 1 1 -148 0" fill="none"></path>
+            <text font-size="17" font-weight="800" fill="#052742" letter-spacing="3.2" font-family="Bricolage Grotesque, system-ui, sans-serif"><textPath href="#pbRing">PUDIM BOX · DOCERIA · SÃO PAULO ·</textPath></text>
+          </svg>
+          <img src="assets/logo-icon.png" alt="" style="position: absolute; left: 29%; top: 29%; width: 42%; height: 42%; animation: whisk 1.6s ease-in-out infinite">
+        </div>
+      </div>
+      <div style="flex: 2 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+        <p style="margin: 0; font-size: 15px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: #C9701F">Pudins individuais</p>
+        <h2 style="margin: 0; font-weight: 800; font-size: clamp(44px, 5vw, 76px); line-height: 0.95; letter-spacing: -0.04em; color: #052742">Escolha<br><span style="font-family: 'Kaushan Script', cursive; font-weight: 400; letter-spacing: 0; color: #C9701F">sua calda.</span></h2>
+        <div style="display: flex; flex-direction: column; gap: 4px">
+                      <button type="button" class="pb-flv-btn is-on" data-i="0" aria-pressed="true"><span>Baunilha</span><span class="pb-arrow" aria-hidden="true">→</span></button>
+            <button type="button" class="pb-flv-btn" data-i="1" aria-pressed="false"><span>Tradicional</span><span class="pb-arrow" aria-hidden="true">→</span></button>
+            <button type="button" class="pb-flv-btn" data-i="2" aria-pressed="false"><span>Cocada</span><span class="pb-arrow" aria-hidden="true">→</span></button>
+            <button type="button" class="pb-flv-btn" data-i="3" aria-pressed="false"><span>Doce de leite</span><span class="pb-arrow" aria-hidden="true">→</span></button>
+            <button type="button" class="pb-flv-btn" data-i="4" aria-pressed="false"><span>Paçoca</span><span class="pb-arrow" aria-hidden="true">→</span></button>
+            <button type="button" class="pb-flv-btn" data-i="5" aria-pressed="false"><span>Romeu e Julieta</span><span class="pb-arrow" aria-hidden="true">→</span></button>
+        </div>
+        <a class="pb-btn" href="https://pudim-box-storefront.vercel.app/" style="align-self: flex-start; text-decoration: none; background: #052742; color: #FFFFFF; padding: 18px 32px; border-radius: 999px; font-weight: 800; font-size: 18px">Pedir este sabor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NA FORMA DE ALUMÍNIO -->
+  <section id="forma" style="background: #EEF2F6; padding: 100px 24px 140px">
+    <div style="max-width: 1320px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px">
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+        <div style="flex: 2 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+          <p style="margin: 0; font-size: 15px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: #C9701F">Pudim inteiro</p>
+          <h2 style="margin: 0; font-weight: 800; font-size: clamp(44px, 5vw, 76px); line-height: 0.95; letter-spacing: -0.04em; color: #052742">Na forma<br>de alumínio.<br><span style="font-family: 'Kaushan Script', cursive; font-weight: 400; letter-spacing: 0; color: #C9701F">Do jeito de casa.</span></h2>
+          <p style="margin: 0; font-size: 20px; line-height: 1.55; color: #33536A; max-width: 460px">Desenformou, a calda escorre pela borda e o pudim treme no prato. Inteiro, pra dividir na mesa ou guardar só pra você.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px">
+            <span style="background: #FFFFFF; border: 1.5px solid #C7D3DE; color: #052742; padding: 10px 20px; border-radius: 999px; font-weight: 800; font-size: 17px">650 g</span>
+            <span style="background: #FFFFFF; border: 1.5px solid #C7D3DE; color: #052742; padding: 10px 20px; border-radius: 999px; font-weight: 800; font-size: 17px">1 kg</span>
+          </div>
+          <a class="pb-btn" href="https://pudim-box-storefront.vercel.app/" style="align-self: flex-start; text-decoration: none; background: #052742; color: #FFFFFF; padding: 18px 32px; border-radius: 999px; font-weight: 800; font-size: 18px">Encomendar pudim inteiro</a>
+        </div>
+        <figure class="pb-zoom" style="flex: 3 1 520px; min-width: 0; margin: 0; position: relative; aspect-ratio: 3 / 2; border-radius: 36px; box-shadow: 0 40px 80px -30px rgba(5,39,66,0.5)">
+          <img src="assets/hero-desenforma.jpg" alt="Mão levantando a forma de alumínio de um pudim de leite moça, com fios de calda escorrendo" style="width: 100%; height: 100%; object-fit: cover; display: block; animation: lift 7s ease-in-out infinite alternate">
+          <figcaption style="position: absolute; left: 20px; bottom: 20px; background: #052742; color: #FFFFFF; padding: 8px 22px 12px; border-radius: 999px; font-family: 'Kaushan Script', cursive; font-size: 26px">Leite Moça</figcaption>
+        </figure>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+        <figure class="pb-zoom" style="margin: 0; position: relative; aspect-ratio: 4 / 5; border-radius: 28px">
+          <img src="assets/forma-pistache.jpg" alt="Pudim de pistache inteiro na forma de alumínio" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; display: block">
+          <figcaption style="position: absolute; left: 16px; bottom: 16px; background: #FFFFFF; color: #052742; padding: 6px 18px 10px; border-radius: 999px; font-family: 'Kaushan Script', cursive; font-size: 21px">Pistache · na forma</figcaption>
+        </figure>
+        <figure class="pb-zoom" style="margin: 0; position: relative; aspect-ratio: 4 / 5; border-radius: 28px">
+          <img src="assets/combo.jpg" alt="Pudim de 1 kg e dois pudins individuais" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; display: block">
+          <figcaption style="position: absolute; left: 16px; bottom: 16px; background: #FFFFFF; color: #052742; padding: 6px 18px 10px; border-radius: 999px; font-family: 'Kaushan Script', cursive; font-size: 21px">1 kg + 2 individuais</figcaption>
+        </figure>
+        <figure class="pb-zoom" style="margin: 0; position: relative; aspect-ratio: 4 / 5; border-radius: 28px">
+          <img src="assets/1kg-chocolate.jpg" alt="Pudim de chocolate de 1 kg em prato dourado" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 65%; display: block">
+          <figcaption style="position: absolute; left: 16px; bottom: 16px; background: #FFFFFF; color: #052742; padding: 6px 18px 10px; border-radius: 999px; font-family: 'Kaushan Script', cursive; font-size: 21px">Chocolate · 1 kg</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOLOS NO POTE -->
+  <section id="bolos" style="background: #052742; color: #FFFFFF; position: relative; padding: 170px 24px 110px">
+    <svg viewBox="0 0 1440 140" preserveAspectRatio="none" style="display: block; width: 100%; height: 110px; position: absolute; top: -1px; left: 0" aria-hidden="true">
+      <rect x="0" y="0" width="1440" height="34" fill="#EEF2F6"></rect>
+      <path d="M0 32 Q60 56 120 32 Q180 66 240 32 Q300 52 360 32 Q420 70 480 32 Q540 54 600 32 Q660 62 720 32 Q780 50 840 32 Q900 68 960 32 Q1020 54 1080 32 Q1140 64 1200 32 Q1260 52 1320 32 Q1380 60 1440 32 L1440 0 L0 0 Z" fill="#EEF2F6"></path>
+      <rect class="pb-p" x="172" y="34" width="16" height="70" rx="8" fill="#EEF2F6" style="transform-origin: top; animation: dripLoop 4.4s ease-in-out infinite"></rect>
+      <rect class="pb-p" x="612" y="34" width="20" height="96" rx="10" fill="#EEF2F6" style="transform-origin: top; animation: dripLoop 5s .5s ease-in-out infinite"></rect>
+      <rect class="pb-p" x="1030" y="34" width="18" height="84" rx="9" fill="#EEF2F6" style="transform-origin: top; animation: dripLoop 4.8s .2s ease-in-out infinite"></rect>
+      <rect class="pb-p" x="1300" y="34" width="14" height="62" rx="7" fill="#EEF2F6" style="transform-origin: top; animation: dripLoop 4s 1.3s ease-in-out infinite"></rect>
+    </svg>
+
+    <div style="max-width: 1320px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+      <div style="display: flex; flex-wrap: wrap-reverse; align-items: center; gap: 48px">
+        <div style="flex: 2 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+          <p style="margin: 0; font-size: 15px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: #F2B25C">Brownies &amp; bolos</p>
+          <h2 style="margin: 0; font-weight: 800; font-size: clamp(44px, 5vw, 76px); line-height: 0.95; letter-spacing: -0.04em">Casquinha<br>que racha.<br><span style="font-family: 'Kaushan Script', cursive; font-weight: 400; letter-spacing: 0; color: #F2B25C">Miolo que puxa.</span></h2>
+          <p style="margin: 0; font-size: 20px; line-height: 1.55; color: #C9D6E2; max-width: 440px">Brownie denso e molhadinho, e bolos no pote com creme até a borda. Pra quem pede sobremesa da sobremesa.</p>
+          <a class="pb-btn" href="https://pudim-box-storefront.vercel.app/" style="align-self: flex-start; text-decoration: none; background: #FFFFFF; color: #052742; padding: 18px 32px; border-radius: 999px; font-weight: 800; font-size: 18px">Ver brownies e bolos</a>
+        </div>
+        <figure class="pb-zoom" style="flex: 3 1 560px; min-width: 0; margin: 0; position: relative; aspect-ratio: 3 / 2; border-radius: 36px">
+          <img src="assets/brownie-fatia.jpg" alt="Fatia de brownie em prato escuro com gotas de chocolate" style="width: 100%; height: 100%; object-fit: cover; display: block">
+          <figcaption style="position: absolute; left: 20px; bottom: 20px; background: #FFFFFF; color: #052742; padding: 8px 22px 12px; border-radius: 999px; font-family: 'Kaushan Script', cursive; font-size: 26px">Brownie</figcaption>
+        </figure>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+        <figure class="pb-zoom" style="margin: 0; position: relative; aspect-ratio: 4 / 5; border-radius: 28px">
+          <img src="assets/brownie-ninho.jpg" alt="Brownie Ninho com Nutella no pote, colher puxando um pedaço" style="width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%; display: block">
+          <figcaption style="position: absolute; left: 16px; bottom: 16px; background: #FFFFFF; color: #052742; padding: 6px 18px 10px; border-radius: 999px; font-family: 'Kaushan Script', cursive; font-size: 21px">Brownie Ninho c/ Nutella</figcaption>
+        </figure>
+        <figure class="pb-zoom" style="margin: 0; position: relative; aspect-ratio: 4 / 5; border-radius: 28px">
+          <img src="assets/bolo-prestigio.jpg" alt="Bolo Prestígio no pote com coco" style="width: 100%; height: 100%; object-fit: cover; display: block">
+          <figcaption style="position: absolute; left: 16px; bottom: 16px; background: #FFFFFF; color: #052742; padding: 6px 18px 10px; border-radius: 999px; font-family: 'Kaushan Script', cursive; font-size: 21px">Prestígio</figcaption>
+        </figure>
+        <figure class="pb-zoom" style="margin: 0; position: relative; aspect-ratio: 4 / 5; border-radius: 28px">
+          <img src="assets/brownie-tabua.jpg" alt="Tábua com pedaços de brownie e colheres" style="width: 100%; height: 100%; object-fit: cover; display: block">
+          <figcaption style="position: absolute; left: 16px; bottom: 16px; background: #FFFFFF; color: #052742; padding: 6px 18px 10px; border-radius: 999px; font-family: 'Kaushan Script', cursive; font-size: 21px">Tábua de brownies</figcaption>
+        </figure>
+        <figure class="pb-zoom" style="margin: 0; position: relative; aspect-ratio: 4 / 5; border-radius: 28px">
+          <img src="assets/bolo-casadinho.jpg" alt="Bolo no pote Casadinho com a colher levantando massa e creme" style="width: 100%; height: 100%; object-fit: cover; object-position: 45% 50%; display: block">
+          <figcaption style="position: absolute; left: 16px; bottom: 16px; background: #FFFFFF; color: #052742; padding: 6px 18px 10px; border-radius: 999px; font-family: 'Kaushan Script', cursive; font-size: 21px">Casadinho</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA final -->
+  <section id="pedir" style="position: relative; min-height: 640px; display: flex; align-items: center; overflow: hidden; background: #052742">
+    <img src="assets/cta-variados.jpg" alt="Três pudins desenformados em pratos escuros" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%; animation: kenburns 20s ease-in-out infinite alternate">
+    <div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(5,39,66,0.92) 0%, rgba(5,39,66,0.65) 45%, rgba(5,39,66,0.05) 80%)"></div>
+    <div style="position: relative; width: 100%; max-width: 1320px; margin: 0 auto; box-sizing: border-box; padding: 100px 32px; display: flex; flex-direction: column; gap: 24px">
+      <h2 style="margin: 0; font-weight: 800; font-size: clamp(48px, 6.2vw, 100px); line-height: 0.92; letter-spacing: -0.045em; color: #FFFFFF">Deu vontade?<br><span style="font-family: 'Kaushan Script', cursive; font-weight: 400; letter-spacing: 0; color: #F2B25C">A gente entende.</span></h2>
+      <p style="margin: 0; font-size: 20px; line-height: 1.55; color: #E6EDF3; max-width: 480px">Pede pelo site, chama no WhatsApp ou passa numa das nossas lojas. Chega gelado e brilhando.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 14px">
+        <a class="pb-btn" href="https://pudim-box-storefront.vercel.app/" style="text-decoration: none; background: #FFFFFF; color: #052742; padding: 18px 32px; border-radius: 999px; font-weight: 800; font-size: 18px">Pedir pelo site</a>
+        <a class="pb-btn" href="https://wa.me/5511926241020?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20na%20Pudim%20Box." style="text-decoration: none; background: #25D366; color: #052742; padding: 16px 28px; border-radius: 999px; font-weight: 800; font-size: 18px; display: inline-flex; align-items: center; gap: 10px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4A8.5 8.5 0 1 1 8 19.6z"></path><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1-.4-2.4-1.8-2.8-2.8l.8-1-1-2z"></path></svg>Pedir no WhatsApp</a>
+        <a class="pb-btn" href="https://www.instagram.com/pudimbox/" style="text-decoration: none; border: 2px solid #FFFFFF; color: #FFFFFF; padding: 14px 26px; border-radius: 999px; font-weight: 700; font-size: 18px; display: inline-flex; align-items: center; gap: 10px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"></circle></svg>@pudimbox</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOJAS -->
+  <section id="lojas" style="background: #EEF2F6; padding: 100px 24px">
+    <div style="max-width: 1320px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px">
+        <div style="display: flex; flex-direction: column; gap: 16px">
+          <p style="margin: 0; font-size: 15px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: #C9701F">Nossas lojas</p>
+          <h2 style="margin: 0; font-weight: 800; font-size: clamp(44px, 5vw, 76px); line-height: 0.95; letter-spacing: -0.04em; color: #052742">Tem Pudim Box<br><span style="font-family: 'Kaushan Script', cursive; font-weight: 400; letter-spacing: 0; color: #C9701F">perto de você.</span></h2>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a class="pb-btn" href="https://wa.me/5511926241020?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20na%20Pudim%20Box." style="text-decoration: none; background: #25D366; color: #052742; padding: 14px 24px; border-radius: 999px; font-weight: 800; font-size: 17px; display: inline-flex; align-items: center; gap: 10px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4A8.5 8.5 0 1 1 8 19.6z"></path><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1-.4-2.4-1.8-2.8-2.8l.8-1-1-2z"></path></svg>(11) 92624-1020</a>
+          <a class="pb-btn" href="https://www.instagram.com/pudimbox/" style="text-decoration: none; background: #052742; color: #FFFFFF; padding: 14px 24px; border-radius: 999px; font-weight: 800; font-size: 17px; display: inline-flex; align-items: center; gap: 10px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"></circle></svg>@pudimbox</a>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
+        <article style="background: #FFFFFF; border: 1.5px solid #D5DEE6; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#C9701F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
+          <h3 style="margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.02em; color: #052742">Pudim Box <span style="font-family: 'Kaushan Script', cursive; font-weight: 400; color: #C9701F">Brooklin</span></h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #33536A">Rua Barão do Triunfo, 348<br>Brooklin · São Paulo</p>
+          <a class="pb-btn" href="https://share.google/Go8KBdgLhUgQPkDXe" style="margin-top: auto; align-self: flex-start; text-decoration: none; background: #052742; color: #FFFFFF; padding: 14px 24px; border-radius: 999px; font-weight: 800; font-size: 16px; display: inline-flex; align-items: center; gap: 8px">Ver no Google <span aria-hidden="true">→</span></a>
+        </article>
+        <article style="background: #FFFFFF; border: 1.5px solid #D5DEE6; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#C9701F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
+          <h3 style="margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.02em; color: #052742">Pudim Box <span style="font-family: 'Kaushan Script', cursive; font-weight: 400; color: #C9701F">Vila Mariana</span></h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #33536A">Rua Rio Grande, 402<br>Vila Mariana · São Paulo</p>
+          <a class="pb-btn" href="https://maps.app.goo.gl/7j4DQycQyonZkXxN6" style="margin-top: auto; align-self: flex-start; text-decoration: none; background: #052742; color: #FFFFFF; padding: 14px 24px; border-radius: 999px; font-weight: 800; font-size: 16px; display: inline-flex; align-items: center; gap: 8px">Ver no Google <span aria-hidden="true">→</span></a>
+        </article>
+        <article style="background: #FFFFFF; border: 1.5px solid #D5DEE6; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#C9701F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
+          <h3 style="margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.02em; color: #052742">Pudim Box <span style="font-family: 'Kaushan Script', cursive; font-weight: 400; color: #C9701F">Santana</span></h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #33536A">Rua Dr. Cesar, 1113<br>Santana · São Paulo</p>
+          <a class="pb-btn" href="https://share.google/e6kAju0D38A54r2Eo" style="margin-top: auto; align-self: flex-start; text-decoration: none; background: #052742; color: #FFFFFF; padding: 14px 24px; border-radius: 999px; font-weight: 800; font-size: 16px; display: inline-flex; align-items: center; gap: 8px">Ver no Google <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background: #031A2D; padding: 56px 24px; color: #C9D6E2">
+    <div style="max-width: 1320px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; font-size: 15px">
+      <img src="assets/logo-full-white.png" alt="Pudim Box" style="width: 170px; height: auto">
+      <span>Pudins, bolos e sobremesas · São Paulo</span>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 18px">
+        <a href="https://wa.me/5511926241020?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20na%20Pudim%20Box." style="color: #FFFFFF; display: inline-flex; align-items: center; gap: 8px; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4A8.5 8.5 0 1 1 8 19.6z"></path><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1-.4-2.4-1.8-2.8-2.8l.8-1-1-2z"></path></svg>WhatsApp</a>
+        <a href="https://www.instagram.com/pudimbox/" style="color: #FFFFFF; display: inline-flex; align-items: center; gap: 8px; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"></circle></svg>Instagram</a>
+        <a href="https://pudim-box-storefront.vercel.app/" style="color: #FFFFFF">Loja online</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5511926241020?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20na%20Pudim%20Box." aria-label="Falar com a Pudim Box no WhatsApp" style="position: fixed; right: 24px; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); z-index: 50; width: 64px; height: 64px; border-radius: 50%; background: #25D366; color: #052742; display: flex; align-items: center; justify-content: center; box-shadow: 0 12px 30px -8px rgba(5,39,66,0.6); animation: pulse 2.4s ease-in-out infinite">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4A8.5 8.5 0 1 1 8 19.6z"></path><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1-.4-2.4-1.8-2.8-2.8l.8-1-1-2z"></path></svg>
+  </a>
+</div>
+<script>
+(function(){
+  var imgs=document.querySelectorAll('.pb-flv-img'),btns=document.querySelectorAll('.pb-flv-btn');
+  var nameEl=document.getElementById('pb-flv-name'),bar=document.getElementById('pb-progress');
+  var names=Array.prototype.map.call(btns,function(b){return b.querySelector('span').textContent;});
+  var cur=0,timer=null;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function show(i){
+    imgs[cur].classList.remove('is-on');btns[cur].classList.remove('is-on');btns[cur].setAttribute('aria-pressed','false');
+    cur=i;
+    imgs[cur].classList.add('is-on');btns[cur].classList.add('is-on');btns[cur].setAttribute('aria-pressed','true');
+    nameEl.textContent=names[cur];
+  }
+  function stop(){clearInterval(timer);timer=null;bar.classList.add('is-stopped');}
+  Array.prototype.forEach.call(btns,function(b){b.addEventListener('click',function(){stop();show(+b.dataset.i);});});
+  if(reduce){stop();}else{timer=setInterval(function(){show((cur+1)%imgs.length);},3600);}
+})();
+</script>
+</body>
+</html>
